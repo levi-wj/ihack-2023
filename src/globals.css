@@ -91,44 +91,6 @@ body {
     background-color: var(--background);
 }
 
-header {
-    color: var(--background);
-    background-color: var(--primary);
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: .5em 1.5em;
-}
-
-header-h1 {
-    font-weight: var(--font-bold);
-}
-
-header > nav > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-
-header > nav > ul > li {
-    margin-left: 1em;
-}
-
-header > nav > ul > li > a {
-    color: var(--background);
-    transition: all .1s ease-in;
-
-}
-header > nav > ul > li > a:hover {
-    color: var(--secondary-dark);
-}
-
 body div main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -147,6 +109,15 @@ body div main a section {
 body div main a section:hover {
     color: var(--accent);
     box-shadow: 5px 5px 10px  var(--secondary-dark);
+}
+
+header {
+    color: var(--background);
+    background-color: var(--primary);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1.5em;
 }
 
 .puzzle-container {

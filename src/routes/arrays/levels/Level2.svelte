@@ -5,7 +5,7 @@
     export let completeLevel;
 
     let points = 0;
-    const pointsNeeded = 3;
+    const pointsNeeded = 4;
     
     function addPoint() {
         points++;

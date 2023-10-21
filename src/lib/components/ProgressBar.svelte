@@ -23,8 +23,8 @@
         border-radius: .9em;
     }
     .progress-bar {
-        border-radius: 1em;
-        height: 21px; 
+        border-radius: 2em;
+        height: 22px; 
         background-color: var(--accent-light);
     }
 </style>
