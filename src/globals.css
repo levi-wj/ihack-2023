@@ -58,12 +58,12 @@ a {
     font-weight: 400;
     --text: #050400;
     --black: #3f3f3b;
-    --background: rgb(255, 251, 230);
+    --background: #fffae3;
     --primary-dark: #1a8b87;
     --primary: #28b1ad;
-    --primary-light: #b1d0cf;
+    --primary-light: #d1e9e8;
     --secondary-dark: #e5ddc9;
-    --secondary: #fff6df;
+    --secondary: #fff2da;
     --accent-dark: #891350;
     --accent: #c94c8d;
     --accent-light: #e591bc;
