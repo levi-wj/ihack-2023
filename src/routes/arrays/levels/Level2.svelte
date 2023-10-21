@@ -17,14 +17,13 @@
 
 <div class="puzzle-container">
     <div class="sidebar">
-        <h3>Array methods</h3>
-        <p>Every array has built in methods that allow you to search through the data to find specific items, or transform the data in the array.</p>
-        <h3>The .map() method</h3>
-        <p>The map method creates a new array by iterating through a prexisting array, and running a callback function on each item.</p>
+        <h3>The .filter() method</h3>
+        <p>The filter method creates a new array by adding array items that meet the requirements set in the callback function.</p>
         <h3>Example</h3>
         <div class="code-example">
-            <p>array.map(function(a) {'{'}</p>
-            <p class="indent1">return a + 'b';</p>
+            <p>let b = 4;</p>
+            <p>array.filter(function(a) {'{'}</p>
+            <p class="indent1">return a.length > b;</p>
             <p>{'}'}</p>
         </div>
     </div>
