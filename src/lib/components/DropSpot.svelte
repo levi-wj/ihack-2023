@@ -8,7 +8,6 @@
     function handleMouseUp(e) {
         if (!isDone) {
             if (e.target.classList.contains('draggable') && doesMouseOverlapElement(dropSpan, e.clientX, e.clientY)) {
-            // console.log(e.target, expectedText)
                 if (e.target.innerText === expectedText) {
                     e.target.parentElement.removeChild(e.target);
                     dropSpan.innerText = expectedText;

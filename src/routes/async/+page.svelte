@@ -28,6 +28,7 @@
 
     function nextLevel() {
         curLevel ++;
+        isLevelComplete = false;
     }
 </script>
 
