@@ -17,7 +17,7 @@
             <ProgressBar completed=1 toComplete=5 />
         </section>
     </a>
-    <a href="/css">
+    <a href="/selectors">
         <section>
             <h2>CSS Selector Puzzles</h2>
             <p>Can you select the right elements with CSS?</p>
