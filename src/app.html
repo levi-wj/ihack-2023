@@ -3,10 +3,20 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<link rel="stylesheet" href="/src/globals.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+		
+		<script type="module">
+			import Header from '/src/lib/components/Header.svelte';
+			
+			const header = new Header({
+				target: document.getElementById('header'),
+			});
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
+		<header id="header"></header>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>
