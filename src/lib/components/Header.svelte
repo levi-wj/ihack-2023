@@ -6,7 +6,7 @@
 <nav>
     <ul>
         <li>
-            <ProgressBar completed={1} toComplete={15} />
+            <ProgressBar completed={11} toComplete={15} color="var(--background)" />
         </li>
     </ul>
 </nav>

@@ -93,12 +93,16 @@ body {
 
 body div main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     margin: 1em;
+    height: 35vh;
 }
 
 body div main a section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     height: 100%;
     padding: 1.5em;
     border-radius: 1em;

@@ -10,13 +10,6 @@
             <ProgressBar completed=2 toComplete=5 />
         </section>
     </a>
-    <a href="/filepath">
-        <section>
-            <h2>Filepath Puzzles</h2>
-            <p>Think you know your way around filepaths?</p>
-            <ProgressBar completed=1 toComplete=5 />
-        </section>
-    </a>
     <a href="/selectors">
         <section>
             <h2>CSS Selector Puzzles</h2>

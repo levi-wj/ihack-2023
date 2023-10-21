@@ -2,9 +2,10 @@
     import { Confetti } from 'svelte-confetti'
     import LevelPicker from "../../lib/components/LevelPicker.svelte";
     import NextButton from "../../lib/components/NextButton.svelte";
+    import { progress } from "../../lib/localstore.js";
     
     export let levels = [];
-    export let title = "Async/await";
+    export let title = "";
 
     let curLevel = 0;
     let confetti;
@@ -19,7 +20,7 @@
         new Confetti({
             props: {
                 delay: [500, 2000],
-                amount: 800,
+                amount: 500,
                 relative: false,
                 x: [-5, 5],
                 y: [0, .1],

@@ -15,4 +15,4 @@
     ];
 </script>
 
-<Puzzle {levels} />
+<Puzzle {levels} title="Async/await" />
