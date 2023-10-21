@@ -17,13 +17,14 @@
 
 <div class="puzzle-container">
     <div class="sidebar">
-        <h3>Using fetch</h3>
-        <p>Fetch is a javascript function that allows you to get data from other websites.</p>
-        <p>The syntax is: fetch('url.to.get.data.from')</p>
-        <p>In our case, we'll use fetch to get some dog pictures!</p>
-        <h3>Awaiting APIs</h3>
-        <p>Often when using an API, we send out requests and we don't know how long they'll take to come back.</p>
-        <p>In these cases, we want to use await to pause our code execution until the request finishes before continuing.</p>
+        <h3>Two awaits?</h3>
+        <p>This code example may look a little strange because of the two await statements right after each other:</p>
+        <div class="code-example" style="margin-bottom: 1em">
+            <p>const stream = await fetch('dog.ceo/api');</p>
+            <p>const data = await stream.json();</p>
+        </div>
+        <p>We do this because the first fetch() call returns a ReadableStream, which contains a json() method.</p>
+        <p>To extract and parse the data from this stream, you use the .json() method, which returns a promise that resolves to the request's returned JSON. </p>
     </div>
     <div class="puzzle">
         <div class="code">

@@ -17,7 +17,7 @@
 <style>
     select{
         border: none;
-        border-radius: 0 1em 1em 0;
+        border-radius: 14px;
         padding: 1em;
         margin: 1em;
         margin-left: 0;

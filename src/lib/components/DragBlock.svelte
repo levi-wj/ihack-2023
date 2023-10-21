@@ -1,7 +1,7 @@
 <script>
     export let text = '';
     export let left = 0;
-    export let top = 20;
+    export let top = 10;
 	
 	let moving = false;
 	

@@ -25,6 +25,12 @@
         <h3>Using fetch</h3>
         <p>Fetch is a javascript function that allows you to get data from other websites.</p>
         <p>The syntax is: fetch('url.to.get.data.from')</p>
+        <h3>Code example</h3>
+        <div class="code-example">
+            <p>const source = <span style="font-weight: bold">await</span> fetch('data.com/api')</p>
+            <p>// Because of the await, the program will wait for </p>
+            <p>// the above line to finish before continuing</p>
+        </div>
     </div>
     <div class="puzzle">
         <div class="code">

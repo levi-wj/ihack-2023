@@ -160,6 +160,8 @@ body div main a section:hover {
     padding: 1em;
     border-radius: 0 10px 10px 0;
     border-bottom: 4px solid var(--primary-light-shadow);
+    max-height: 70vh;
+    overflow-y: scroll;
 }
 
 .puzzle-container > div.sidebar p {
@@ -173,6 +175,7 @@ body div main a section:hover {
     background-color: var(--black);
     color: var(--background);
     padding: 1em;
+    max-height: 70vh;
     border-radius: 10px 0 0 10px;
     font-family: var(--code-font);
     border-bottom: 4px solid var(--text);
@@ -192,6 +195,7 @@ body div main a section:hover {
     border-radius: 10px;
     background-color: black;
     margin: 0;
+    margin-top: 1em;
 }
 
 .code-example {
@@ -203,4 +207,7 @@ body div main a section:hover {
     border-bottom: 4px solid var(--text);
     line-height: .6em;
     padding-bottom: 0;
+}
+.code-example > p {
+    margin-bottom: 0 !important ;
 }

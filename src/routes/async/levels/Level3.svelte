@@ -5,7 +5,7 @@
     export let completeLevel;
 
     let points = 0;
-    const pointsNeeded = 4;
+    const pointsNeeded = 5;
     
     function addPoint() {
         points++;
@@ -17,7 +17,16 @@
 
 <div class="puzzle-container">
     <div class="sidebar">
-        <h3></h3>
+        <h3>Promise.all()</h3>
+        <p>Await is great for waiting to make sure your data is there before later code tries to access it. Sometimes though, you may want to run multiple fetch() calls at the same time for faster performance.</p>
+        <p>We can use Promise.all(promise1, promise2, ...) to get the results of all our fetch() calls simultaniously. </p>
+        <h3>Code Example</h3>
+        <div class="code-example">
+            <p>const first = fetch('data1.com/api');</p>
+            <p>const second = fetch('data2.com/api');</p>
+            <p>const [data1, data2] = await Promise.all(first, second);</p>
+            <p style="margin-top: .5em">// To get JSON out of data1 or data2, we still need to to await the .json() call</p>
+        </div>
     </div>
     <div class="puzzle">
         <div class="code">
@@ -50,8 +59,9 @@
         <div class="drawer">
             <DragBlock text="fetch" left={10} />
             <DragBlock text="await" left={110} />
-            <DragBlock text="Promise.all" left={210} />
-            <DragBlock text="json" left={365}/>
+            <DragBlock text="await" left={210} />
+            <DragBlock text="Promise.all" left={310} />
+            <DragBlock text="json" left={465}/>
         </div>
     </div>
 </div>
