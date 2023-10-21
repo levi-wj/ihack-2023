@@ -24,7 +24,7 @@
             <ProgressBar completed=4 toComplete=5 />
         </section>
     </a>
-    <a href="/">
+    <a href="/arrays">
         <section>
             <h2>JS Array Method Puzzles</h2>
             <p>Master JavaScript array methods</p>

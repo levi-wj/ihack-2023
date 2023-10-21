@@ -5,6 +5,7 @@
     import Level4 from "./levels/Level4.svelte";
     import Level5 from "./levels/Level5.svelte";
     import LevelPicker from "../../lib/components/LevelPicker.svelte";
+    import NextButton from "../../lib/components/NextButton.svelte";
     
     const levels = [
         { title: 'Level 1: Absolute path', component: Level1}, 

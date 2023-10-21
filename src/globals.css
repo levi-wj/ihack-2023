@@ -193,3 +193,14 @@ body div main a section:hover {
     background-color: black;
     margin: 0;
 }
+
+.code-example {
+    background-color: var(--black);
+    color: var(--background);
+    padding: 1em;
+    border-radius: 10px;
+    font-family: var(--code-font);
+    border-bottom: 4px solid var(--text);
+    line-height: .6em;
+    padding-bottom: 0;
+}
