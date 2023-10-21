@@ -1,11 +1,16 @@
 <script>
     export let levels = [];
     export let setCurLevel;
+    export let curLevel;
 </script>
 
 <select on:change={e => setCurLevel(e.target.value) }>
     {#each levels as level, i}
-        <option value={i}>{level.title}</option>
+        {#if i === curLevel}
+            <option value={i} selected>{level.title}</option>
+        {:else}
+            <option value={i}>{level.title}</option>
+        {/if}
     {/each}
 </select>
 

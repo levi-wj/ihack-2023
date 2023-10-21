@@ -5,6 +5,7 @@
     import Level4 from "./levels/Level4.svelte";
     import Level5 from "./levels/Level5.svelte";
     import LevelPicker from "../../lib/components/LevelPicker.svelte";
+    import NextButton from "../../lib/components/NextButton.svelte";
     
     const levels = [
         { title: 'Level 1: Get data from API', component: Level1}, 
@@ -15,12 +16,25 @@
     ];
 
     let curLevel = 0;
+    let isLevelComplete = false;
     
     function setCurLevel(level) {
         curLevel = level;
     }
+
+    function completeLevel() {
+        isLevelComplete = true;
+    }
+
+    function nextLevel() {
+        curLevel ++;
+    }
 </script>
 
 <h2>Async/await puzzles</h2>
-<LevelPicker {levels} {setCurLevel}></LevelPicker>
-<svelte:component this={levels[curLevel].component} />
+<LevelPicker {levels} {setCurLevel} {curLevel}></LevelPicker>
+<svelte:component this={levels[curLevel].component} {completeLevel} />
+
+{#if isLevelComplete}
+    <NextButton {nextLevel} />
+{/if}

@@ -48,9 +48,23 @@ overflow-wrap: break-word;
 isolation: isolate;
 }
 
+.indent1 {
+    margin-left: 1.5em;
+}
+.indent2 {
+    margin-left: 3em;
+}
+.indent3 {
+    margin-left: 4.5em;
+}
+
 a {
     text-decoration: none;
     color: var(--primary);
+}
+
+button {
+    cursor: pointer;
 }
   
 :root {
@@ -61,7 +75,9 @@ a {
     --background: #fffae3;
     --primary-dark: #1a8b87;
     --primary: #28b1ad;
+    --primary-shadow: #1c9995;
     --primary-light: #d1e9e8;
+    --primary-light-shadow: #aed1d0;
     --secondary-dark: #e5ddc9;
     --secondary: #fff2da;
     --accent-dark: #891350;
@@ -143,7 +159,7 @@ body div main a section:hover {
     background-color: var(--primary-light);
     padding: 1em;
     border-radius: 0 10px 10px 0;
-    border-bottom: 4px solid var(--text);
+    border-bottom: 4px solid var(--primary-light-shadow);
 }
 
 .puzzle-container > div.sidebar p {

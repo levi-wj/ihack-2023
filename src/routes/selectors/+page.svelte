@@ -7,20 +7,33 @@
     import LevelPicker from "../../lib/components/LevelPicker.svelte";
     
     const levels = [
-        { title: 'Level 1: Element', component: Level1}, 
-        { title: 'Level 2: Id', component: Level2},
-        { title: 'Level 3: Class', component: Level3},
-        { title: 'Level 4: Direct child', component: Level4},
-        { title: 'Level 5: Subsequent sibling', component: Level5},
+        { title: 'Level 1: Id', component: Level1}, 
+        { title: 'Level 2: Class', component: Level2},
+        { title: 'Level 3: Universal selector', component: Level3},
+        { title: 'Level 4: Element', component: Level4},
+        { title: 'Level 5: Pseudo-selectors', component: Level5},
     ];
 
     let curLevel = 0;
+    let isLevelComplete = false;
     
     function setCurLevel(level) {
         curLevel = level;
     }
+
+    function completeLevel() {
+        isLevelComplete = true;
+    }
+
+    function nextLevel() {
+        curLevel ++;
+    }
 </script>
 
-<h2>Async/await puzzles</h2>
-<LevelPicker {levels} {setCurLevel}></LevelPicker>
-<svelte:component this={levels[curLevel].component} />
+<h2>CSS selector puzzles</h2>
+<LevelPicker {levels} {setCurLevel} {curLevel}></LevelPicker>
+<svelte:component this={levels[curLevel].component} {completeLevel} />
+
+{#if isLevelComplete}
+    <NextButton {nextLevel} />
+{/if}

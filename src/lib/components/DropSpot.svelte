@@ -2,22 +2,26 @@
     export let expectedText = '';
     export let addPoint;
 
+    let isDone = false;
     let dropSpan;
 
     function handleMouseUp(e) {
-        if (e.target.classList.contains('draggable') && doesMouseOverlapElement(dropSpan, e.clientX, e.clientY)) {
-            console.log(e.target, expectedText)
-            if (e.target.innerText === expectedText) {
-                e.target.parentElement.removeChild(e.target);
-                dropSpan.innerText = expectedText;
-                dropSpan.classList.remove('drop-spot');
-                addPoint();
+        if (!isDone) {
+            if (e.target.classList.contains('draggable') && doesMouseOverlapElement(dropSpan, e.clientX, e.clientY)) {
+            // console.log(e.target, expectedText)
+                if (e.target.innerText === expectedText) {
+                    e.target.parentElement.removeChild(e.target);
+                    dropSpan.innerText = expectedText;
+                    dropSpan.classList.remove('drop-spot');
+                    addPoint();
+                    isDone = true;
+                }
             }
         }
     }
 
     function doesMouseOverlapElement(element, mouseX, mouseY) {
-        const buffer = 25;
+        const buffer = 5;
         const elementRect = element.getBoundingClientRect();
         const elementTop = elementRect.top - buffer;
         const elementBottom = elementRect.bottom + buffer;

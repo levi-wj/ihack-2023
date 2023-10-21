@@ -15,12 +15,25 @@
     ];
 
     let curLevel = 0;
+    let isLevelComplete = false;
     
     function setCurLevel(level) {
         curLevel = level;
     }
+
+    function completeLevel() {
+        isLevelComplete = true;
+    }
+
+    function nextLevel() {
+        curLevel ++;
+    }
 </script>
 
-<h2>Async/await puzzles</h2>
-<LevelPicker {levels} {setCurLevel}></LevelPicker>
-<svelte:component this={levels[curLevel].component} />
+<h2>Array method puzzles</h2>
+<LevelPicker {levels} {setCurLevel} {curLevel}></LevelPicker>
+<svelte:component this={levels[curLevel].component} {completeLevel} />
+
+{#if isLevelComplete}
+    <NextButton {nextLevel} />
+{/if}
