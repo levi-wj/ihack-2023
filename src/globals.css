@@ -132,3 +132,22 @@ body div main a section:hover {
     color: var(--accent);
     box-shadow: 5px 5px 10px  var(--secondary-dark);
 }
+
+.puzzle-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: minmax(23em, 2fr) 3fr;
+}
+
+.puzzle-container > div.sidebar {
+    background-color: var(--primary-light);
+    padding: 1em;
+    border-radius: 0 10px 10px 0;
+}
+
+.puzzle-container > div.puzzle {
+    background-color: var(--black);
+    color: var(--background);
+    padding: 1em;
+    border-radius: 10px 0 0 10px;
+}
