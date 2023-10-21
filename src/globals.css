@@ -150,4 +150,16 @@ body div main a section:hover {
     color: var(--background);
     padding: 1em;
     border-radius: 10px 0 0 10px;
+    font-family: var(--code-font);
+}
+
+.puzzle-container > div.puzzle > p {
+    margin-top: .25em;
+}
+
+.puzzle-container > div.puzzle .drop-spot {
+    border: 3px dashed var(--primary);
+    border-radius: 10px;
+    padding: .05em 2.5em;
+    margin-left: .5em;
 }
