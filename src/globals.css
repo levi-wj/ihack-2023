@@ -64,8 +64,8 @@ a {
     --primary-light: #b1d0cf;
     --secondary-dark: #e5ddc9;
     --secondary: #fff6df;
-    --accent-dark: #961558;
-    --accent: #e8509f;
+    --accent-dark: #891350;
+    --accent: #c94c8d;
     --accent-light: #e591bc;
     --font-bold: 800;
     --code-font: 'Source Code Pro';
@@ -103,12 +103,11 @@ header > nav > ul {
 header > nav > ul > li {
     margin-left: 1em;
 }
-header > nav > ul > li:hover {
-    background-color: var(--);   
-}
 
 header > nav > ul > li > a {
     color: var(--background);
+    transition: all .1s ease-in;
+
 }
 header > nav > ul > li > a:hover {
     color: var(--secondary-dark);
@@ -126,9 +125,10 @@ body div main a section {
     padding: 1.5em;
     border-radius: 1em;
     background-color: var(--secondary);
+    transition: all .15s ease-in;
 }
 
 body div main a section:hover {
     color: var(--accent);
-    box-shadow: 10px 10px 10px  var(--secondary-dark);
+    box-shadow: 5px 5px 10px  var(--secondary-dark);
 }
