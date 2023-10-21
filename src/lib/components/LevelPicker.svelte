@@ -17,6 +17,5 @@
         margin: 1em;
         margin-left: 0;
         background-color: var(--secondary-dark);
-        /* appearance: ; */
     }
 </style>
