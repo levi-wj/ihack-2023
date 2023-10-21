@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&family=Source+Code+Pro&display=swap');
 
 /* RESET */
 /*
@@ -50,17 +50,25 @@ isolation: isolate;
 
 a {
     text-decoration: none;
-    color: var(--accent);
+    color: var(--primary);
 }
   
-
 :root {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     --text: #050400;
-    --background: #fdfce8;
-    --primary: #14bab4;
-    --secondary: #faf7cc;
-    --accent: #e12084;
+    --black: #3f3f3b;
+    --background: rgb(255, 251, 230);
+    --primary-dark: #1a8b87;
+    --primary: #28b1ad;
+    --primary-light: #b1d0cf;
+    --secondary-dark: #e5ddc9;
+    --secondary: #fff6df;
+    --accent-dark: #961558;
+    --accent: #e8509f;
+    --accent-light: #e591bc;
+    --font-bold: 800;
+    --code-font: 'Source Code Pro';
 }
 
 body {
@@ -74,6 +82,10 @@ header {
     display: flex;
     justify-content: space-between;
     padding: .5em 1.5em;
+}
+
+header-h1 {
+    font-weight: var(--font-bold);
 }
 
 header > nav > ul {
@@ -97,4 +109,26 @@ header > nav > ul > li:hover {
 
 header > nav > ul > li > a {
     color: var(--background);
+}
+header > nav > ul > li > a:hover {
+    color: var(--secondary-dark);
+}
+
+body div main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 1em;
+}
+
+body div main a section {
+    height: 100%;
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: var(--secondary);
+}
+
+body div main a section:hover {
+    color: var(--accent);
+    box-shadow: 10px 10px 10px  var(--secondary-dark);
 }
